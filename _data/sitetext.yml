@@ -11,9 +11,9 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Welcome to our Studio!
-    text: It's Nice To Meet You
-    button: Tell Me More
+    title: Hey! I'm Qian Zhu
+    text: Let the journey begin!
+    button: begin!
     buttonlink: "#services"
 
   services:
@@ -69,9 +69,9 @@ en: &DEFAULT_EN
     end: "Be Part <br> of Our <br> Story!"
 
   about:
-    title: "About Us"
-    text: "our story"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    title: "About Me"
+    text: "I am a former journalist、a TV news studio head and </br> award winning documentary filmmaker."
+    body: "Now，I am a creative producer dedicated to create multifarious content to help companies flourish.  "
     section: about
 
   clients:
@@ -79,9 +79,9 @@ en: &DEFAULT_EN
     max-height: 100px
     horizontal-scrolling: "" #"yes/no"
     list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
+      - title: "luckincoffee"
+        url: https://lkcoffee.com
+        logo: assets\img\clients\luckincoffee.jpg
       - title: "designmodo"
         url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/designmodo.jpg
