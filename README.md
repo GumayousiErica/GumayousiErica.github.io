@@ -178,7 +178,6 @@ The theme is available as open source under the terms of the [MIT License](https
 
 ## Example Implementations
 
-
 - [CV Enterprises](https://cventerprises.org)
 - [Mortazavi Lab at UC Irvine](https://mortazavilab.github.io/)
 
