@@ -44,34 +44,39 @@ en: &DEFAULT_EN
     # left is the default
     #start_align: "left"
     events:
-      - title: "Our Humble Beginnings"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+      - title: "My Career in Media Industry Began"
+        year: "2016"
+        desc: "I graduated from University of Wisconsin Madison with a bachelor degree in Communication Arts and Economics. I also got a certificate in digital studies. Holding the dream of being a news anchor, I entered Shanghai Media Group International News department and became a news editor and a journalist."
         image: assets/img/timeline/1.jpg
         alt:
-      - title: "An Agency is Born"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+      - title: "The Youngest Newsroom Head"
+        year: "2017-2019"
+        desc: "Within one year, I took charge of a Live-streaming News Television show on Dragon TV. I selected news topics, wrote tv show rundown, supervised content production and directed the live broadcasting team. The studio lights excited me！"
         image: assets/img/timeline/2.jpg
         alt:
-      - title: "Jekyll Theme is created"
-        year: "2019"
-        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
+      - title: "Documentary Film Director and Video maker"
+        year: "2019-2021"
+        desc: "My first documentary film “China Story”was born. In two years, I Completed the incubation of 2 million followers social media account and made lots of interesting videos. "
         image: assets/img/timeline/3.jpg
         alt: image alt text
-      - title: "Title"
-        year: "2009-2011"
-        desc: "Your description here, **Markdown** is fully supported."
+      - title: "Creative Producer"
+        year: "2021-Present "
+        desc: "Now，I am responsible for creating TVC, documentaries, newsreel, vlogs, live-streaming programs and set tones for key visual design to help companies increase publicity and flourish."
         image: assets/img/timeline/4.jpg
         alt:
         # you can enforce the alignment
         align: right
-    end: "Be Part <br> of Our <br> Story!"
+      - title: " Also Studying in Peking University for My MBA！"
+        year: "2021-Present "
+        desc: "xx"
+        image: assets/img/timeline/4.jpg
+        alt:
+    end: "My Adventure <br> Continues!"
 
   about:
     title: "About Me"
-    text: "I am a former journalist、a TV news studio head and </br> award winning documentary filmmaker."
-    body: "Now，I am a creative producer dedicated to create multifarious content to help companies flourish.  "
+    text: "I am a former journalist、a TV news studio head and an award-winning documentary filmmaker."
+    body: "Now, I am a creative producer dedicated to create multifarious content to help companies flourish.  "
     section: about
 
   clients:
