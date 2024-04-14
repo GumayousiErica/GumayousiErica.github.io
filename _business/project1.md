@@ -2,7 +2,7 @@
 caption: #what displays in the portfolio grid:
   title: Luckin Coffee
   subtitle: 
-  thumbnail: assets\img\portfolio\luckin.jpeg
+  thumbnail: assets\img\business\luckin.jpeg
   
 #what displays when the item is clicked:
 title: Luckin Coffee

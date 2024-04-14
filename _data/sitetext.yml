@@ -14,26 +14,17 @@ en: &DEFAULT_EN
     title: Hey! I'm Qian Zhu
     text: Let the journey begin!
     button: begin!
-    buttonlink: "#services"
+    buttonlink: "#about"
 
-  services:
-    title: "Services"
-    text: "Lorem ipsum"
-    section: services
-    list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Your description here, full **Markdown** support"
-        icon: fab fa-markdown
+  business:
+    title: "Business"
+    text: ""
+    section: business
+    closebutton: "Close Project"
 
   portfolio:
     title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
+    text: ""
     section: portfolio
     closebutton: "Close Project"
 
@@ -99,7 +90,7 @@ en: &DEFAULT_EN
 
   team:
     title: "OUR AMAZING TEAM"
-    text: "Lorem ipsum dolor sit amet consectetur."
+    text: ""
     subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
     section: team
     people:
@@ -197,7 +188,7 @@ es: &DEFAULT_ES
 
   portfolio:
     title: "Portafolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
+    text: ""
     section: portafolio
     closebutton: "Cerrar Proyecto"
 
@@ -258,7 +249,7 @@ es: &DEFAULT_ES
 
   team:
     title: "NUESTRO INCREÍBLE EQUIPO"
-    text: "Lorem ipsum dolor sit amet consectetur."
+    text: ""
     subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
     section: equipo
     people:
@@ -352,7 +343,7 @@ de: &DEFAULT_DE
 
   portfolio:
     title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
+    text: ""
     section: Portfolio
     closebutton: "Schließen"
 
@@ -413,7 +404,7 @@ de: &DEFAULT_DE
 
   team:
     title: "Unser großartiges Team"
-    text: "Lorem ipsum dolor sit amet consectetur."
+    text: ""
     subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
     section: Team
     people:
