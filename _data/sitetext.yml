@@ -48,7 +48,7 @@ en: &DEFAULT_EN
       - title: "Documentary Film Director and Video maker"
         year: "2019-2021"
         desc: "My first documentary film “China Story”was born. In two years, I Completed the incubation of 2 million followers social media account and made lots of interesting videos. "
-        image: assets/img/timeline/3.jpg
+        image: assets/img/timeline/33.png
         alt: image alt text
       - title: "Creative Producer"
         year: "2021-Present "
@@ -66,8 +66,10 @@ en: &DEFAULT_EN
 
   about:
     title: "About Me"
-    text: "I am a former journalist、a TV news studio head and an award-winning documentary filmmaker."
-    body: "Now, I am a creative producer dedicated to create multifarious content to help companies flourish.  "
+    text: ""
+    body: "I am a former journalist、a TV news studio head and an award-winning documentary filmmaker.  
+    <br/>
+    Now, I am a creative producer dedicated to create multifarious content to help companies flourish. "
     section: about
 
   clients:

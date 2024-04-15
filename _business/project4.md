@@ -7,7 +7,7 @@ caption: #what displays in the portfolio grid:
 #what displays when the item is clicked:
 title: CNNP Brand Promotional Video
 subtitle: 奔跑着的中国核电 </br> "Running Chinese Nuclear Power"
-video: https://video19.ifeng.com/video09/2023/07/04/p7081948582667887088-102-190643.mp4
+video: https://zfile.dyzzz.top/directlink/1/cnnp.mp4
 
 ---
 

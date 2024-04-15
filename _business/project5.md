@@ -7,7 +7,7 @@ caption: #what displays in the portfolio grid:
 #what displays when the item is clicked:
 title: Wuling Motor Newsreel
 subtitle: 风起印尼，筑梦东方 </br> "Running Chinese Nuclear Power"
-video: http://123.57.244.64:8080/directlink/1/%E5%8D%B0%E5%B0%BC%E4%BA%94%E8%8F%B1EV12%E8%B6%85%E9%AB%98%E6%B8%85.mp4
+video: https://zfile.dyzzz.top/directlink/1/%E4%BA%94%E8%8F%B1%E6%96%B0%E9%97%BB%E7%89%871217%EF%BC%88%E9%AB%98%E6%B8%85%E7%89%88%EF%BC%89.mp4
 ---
 
 
