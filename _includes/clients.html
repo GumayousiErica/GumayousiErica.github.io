@@ -2,10 +2,11 @@
 {% if site.locale and site.locale != "" and site.locale != nil %}
   <section class="py-5" id="{{ site.data.sitetext[site.locale].clients.section | default: "clients" }}">
     <div class="container">
+      <div style="text-align:center; margin-bottom:40px;">During my career, I had the chance to collaborate in different capacities with these great companies.</div>
       <div class="row" {% if site.data.sitetext[site.locale].clients.horizontal-scrolling == "yes" %} id="scrolling-clients" {% endif %}>
 	    {% for client in site.data.sitetext[site.locale].clients.list %}
         <div class="col-md-3 col-sm-6">
-          <a href="{{ client.url }}">
+          <a href="{{ client.url }}" target="_blank" rel="noopener noreferrer">
             <img class="img-fluid d-block mx-auto" src="{{ client.logo }}" alt="{{ client.title }}" style="max-height: {{ site.data.sitetext[site.locale].clients.max-height | default: "100px" }}">
           </a>
         </div>

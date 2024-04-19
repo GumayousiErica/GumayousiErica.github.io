@@ -17,7 +17,7 @@ en: &DEFAULT_EN
     buttonlink: "#about"
 
   business:
-    title: "Business"
+    title: "Business SHOWCASES"
     text: ""
     section: business
     closebutton: "Close Project"
@@ -53,14 +53,14 @@ en: &DEFAULT_EN
       - title: "Creative Producer"
         year: "2021-Present "
         desc: "Now，I am responsible for creating TVC, documentaries, newsreel, vlogs, live-streaming programs and set tones for key visual design to help companies increase publicity and flourish."
-        image: assets/img/timeline/4.jpg
+        image: assets/img/timeline/44.jpg
         alt:
         # you can enforce the alignment
         align: right
       - title: " Also Studying in Peking University for My MBA！"
         year: "2021-Present "
         desc: "xx"
-        image: assets/img/timeline/4.jpg
+        image: assets/img/timeline/44.jpg
         alt:
     end: "My Adventure <br> Continues!"
 
@@ -80,15 +80,33 @@ en: &DEFAULT_EN
       - title: "luckincoffee"
         url: https://lkcoffee.com
         logo: assets\img\clients\luckincoffee.jpg
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
+      - title: "byd"
+        url: https://www.byd.com/pc/
+        logo: assets/img/clients/BYD_logo_PNG4.png
+      - title: "volvo"
+        url: https://www.volvocars.com.cn/zh-CN/
+        logo: assets/img/clients/volvo.jpeg
+      - title: "wuling"
+        url: https://www.sgmw.com.cn/
+        logo: assets/img/clients/wuling.webp
+      - title: "maotai"
+        url: https://www.moutaichina.com/
+        logo: assets/img/clients/maotai.jpeg
+      - title: "haier"
+        url: https://www.haier.com/
+        logo: assets/img/clients/Haier_logo_PNG7.png
+      - title: "yili"
+        url: https://www.yili.com/
+        logo: assets/img/clients/yili.png
+      - title: "xiaomi"
+        url: https://www.mi.com/
+        logo: assets/img/clients/Xiaomi_logo_PNG14.png
+      - title: "tiktok"
+        url: https://www.tiktokforbusinessoutbound.com/
+        logo: assets/img/clients/Tiktok_logo_PNG14.png
+      - title: "bank"
+        url: https://www.boc.cn/
+        logo: assets/img/clients/Bank_of_China_logo_PNG1.png
 
   team:
     title: "OUR AMAZING TEAM"
