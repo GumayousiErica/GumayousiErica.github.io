@@ -9,3 +9,11 @@
 #col-md-3 col-sm-6 {
   flex: 0 0 auto;
 }
+
+
+@media (min-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 20%; /* 设置每列宽度为20% */
+    max-width: 20%;
+  }
+}
