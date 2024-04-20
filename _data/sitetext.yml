@@ -38,17 +38,17 @@ en: &DEFAULT_EN
       - title: "My Career in Media Industry Began"
         year: "2016"
         desc: "I graduated from University of Wisconsin Madison with a bachelor degree in Communication Arts and Economics. I also got a certificate in digital studies. Holding the dream of being a news anchor, I entered Shanghai Media Group International News department and became a news editor and a journalist."
-        image: assets/img/timeline/1.jpg
+        image: assets/img/timeline/11.jpeg
         alt:
       - title: "The Youngest Newsroom Head"
         year: "2017-2019"
         desc: "Within one year, I took charge of a Live-streaming News Television show on Dragon TV. I selected news topics, wrote tv show rundown, supervised content production and directed the live broadcasting team. The studio lights excited me！"
-        image: assets/img/timeline/2.jpg
+        image: assets/img/timeline/22.jpg
         alt:
       - title: "Documentary Film Director and Video maker"
         year: "2019-2021"
         desc: "My first documentary film “China Story”was born. In two years, I Completed the incubation of 2 million followers social media account and made lots of interesting videos. "
-        image: assets/img/timeline/33.png
+        image: assets/img/timeline/33.jpg
         alt: image alt text
       - title: "Creative Producer"
         year: "2021-Present "
@@ -60,7 +60,7 @@ en: &DEFAULT_EN
       - title: " Also Studying in Peking University for My MBA！"
         year: "2021-Present "
         desc: "xx"
-        image: assets/img/timeline/44.jpg
+        image: assets/img/timeline/55.jpeg
         alt:
     end: "My Adventure <br> Continues!"
 
