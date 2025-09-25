@@ -1,7 +1,9 @@
-_site
-.sass-cache
-.jekyll-cache
-vendor
-node_modules
 .git
-.DS_Store
+.gitignore
+README.md
+Dockerfile
+.dockerignore
+docker-compose.yml
+.bundle/
+vendor/bundle/
+Gemfile.lock

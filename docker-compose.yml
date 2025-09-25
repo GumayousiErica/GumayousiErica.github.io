@@ -2,10 +2,23 @@ version: '3.8'
 
 services:
   jekyll:
-    build: .
+    image: jekyll/jekyll:4.2.0
     ports:
-      - "4000:4000"
+      - "14000:4000"
     volumes:
-      - .:/app
-      - ./assets/video:/app/assets/video
-    command: bundle exec jekyll serve --host=0.0.0.0 --watch
+      - .:/srv/jekyll
+      - gem_cache:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=production
+    command: >
+      sh -c "
+        gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/ &&
+        bundle config mirror.https://rubygems.org https://gems.ruby-china.com &&
+        bundle check || bundle install &&
+        jekyll build --incremental &&
+        jekyll serve --host 0.0.0.0 --skip-initial-build --no-watch
+      "
+
+volumes:
+  gem_cache:
+

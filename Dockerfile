@@ -1,23 +1,23 @@
-# 使用官方 Ruby 镜像作为基础镜像
-FROM ruby:3.1
+FROM jekyll/jekyll:4.2.0
 
 # 设置工作目录
-WORKDIR /app
+WORKDIR /srv/jekyll
 
-# 复制 Gemfile、Gemfile.lock 和 gemspec 文件到工作目录
-COPY Gemfile Gemfile.lock *.gemspec ./
-
-# 更换gem源为国内镜像并安装依赖
-RUN gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/ && \
-    gem install bundler && \
-    bundle config mirror.https://rubygems.org https://gems.ruby-china.com && \
-    bundle install
-
-# 复制项目文件到工作目录
+# 复制项目文件
 COPY . .
 
-# 暴露端口 4000（Jekyll 默认端口）
+# 设置正确的权限
+RUN chown -R jekyll:jekyll /srv/jekyll
+
+# 配置bundle路径
+RUN bundle config set --local path 'vendor/bundle'
+
+# 安装依赖
+RUN bundle install
+
 EXPOSE 4000
 
-# 启动 Jekyll 服务
-CMD ["bundle", "exec", "jekyll", "serve", "--host=0.0.0.0"]
+# 切换到jekyll用户
+USER jekyll
+
+CMD ["jekyll", "serve", "--host", "0.0.0.0", "--watch", "--incremental", "--livereload"]
