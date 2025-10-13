@@ -17,9 +17,9 @@ url    : "" # the base hostname & protocol for your site, e.g. http://example.co
 baseurl: "" # the subpath of your site, e.g. /blog
 
 title      : Erica's World
-email      : your-email@example.com #this is also the email contact forms will go to
+email      : zhu.qian.erica@gmail.com #this is also the email contact forms will go to
 description: "Site description"
-author     : Your Name
+author     : Qian Zhu
 # logo:     #optional, defaults to site title
   # path: assets\img\clients\creative-market.jpg
   # height: 60 #height in px, defaults to 52px
@@ -32,7 +32,6 @@ analytics:
 collections:
   business:
   portfolio:
-  other_portfolio:
     output: true
     permalink: /:collection/:name.html
 

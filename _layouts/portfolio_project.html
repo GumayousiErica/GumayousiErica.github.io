@@ -1,0 +1,387 @@
+---
+layout: none
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.locale | slice: 0,2 | default: " en" }}">
+
+{% include head.html %}
+
+<body id="page-top">
+
+{% assign project_id = page.project_id | plus: 0 %}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <div class="project-details">
+                {% if project_id == 1 %}
+                <h1 class="text-uppercase">KV</h1>
+                <!--              <p class="item-intro text-muted">这是一些补充</p>-->
+
+                <!-- 收集所有轮播图图片 -->
+                {% assign carousel_images = "" | split: "" %}
+                {% for image in site.static_files %}
+                {% if image.path contains '/assets/img/portfolio/kv' %}
+                {% assign carousel_images = carousel_images | push: image %}
+                {% endif %}
+                {% endfor %}
+
+                <!-- 添加自定义CSS样式确保图片尺寸一致 -->
+                <style>
+                    .carousel-item img {
+                        object-fit: cover;
+                        height: 500px;
+                        width: 100%;
+                    }
+
+                    /* 响应式高度调整 */
+                    @media (max-width: 992px) {
+                        .carousel-item img {
+                            height: 400px;
+                        }
+                    }
+
+                    @media (max-width: 768px) {
+                        .carousel-item img {
+                            height: 300px;
+                        }
+                    }
+
+                    @media (max-width: 576px) {
+                        .carousel-item img {
+                            height: 200px;
+                        }
+                    }
+                </style>
+
+                <!-- Bootstrap Carousel -->
+                {% if carousel_images.size > 0 %}
+                <div id="carouselProject" class="carousel slide" data-ride="carousel" data-interval="5000">
+                    {% if carousel_images.size > 1 %}
+                    <ol class="carousel-indicators">
+                        {% for image in carousel_images %}
+                        <li data-target="#carouselProject" data-slide-to="{{ forloop.index0 }}" {% if forloop.first
+                            %}class="active" {% endif %}></li>
+                        {% endfor %}
+                    </ol>
+                    {% endif %}
+
+                    <div class="carousel-inner">
+                        {% for image in carousel_images %}
+                        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                            <img class="d-block w-100" src="{{ image.path }}">
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    {% if carousel_images.size > 1 %}
+                    <a class="carousel-control-prev" href="#carouselProject" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselProject" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    {% endif %}
+                </div>
+                {% else %}
+                <p>暂无图片可供展示</p>
+                {% endif %}
+
+                {% elsif project_id == 2 %}
+                <h1 class="text-uppercase">Moutai IMC Campaign</h1>
+                <h2 class="item-intro text-muted">【遇·鉴茅台 Moutai IMC Campaign】</h2>
+                <!--                <h3 class="item-intro text-muted">暖场视频 Warm Up Video</h3>-->
+
+                <!-- 视频1 XXX视频播放 -->
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <video controls class="embed-responsive-item">
+                        <source src="https://zfile.dyzzz.top:8888/directlink/1/mouti.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <h2 class="item-intro text-muted">【海外活动落地 Event Planning】</h2>
+                <!-- 2x4 图片排布 -->
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.event_image1 }}"
+                             style="object-fit: cover; height: 200px; width: 100%;" alt="活动图片 1">
+                    </div>
+                    <div class="col-6 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.event_image5 }}"
+                             style="object-fit: cover; height: 200px; width: 100%;" alt="活动图片 5">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.event_image2 }}"
+                             style="object-fit: cover; height: 200px; width: 100%;" alt="活动图片 2">
+                    </div>
+                    <div class="col-6 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.event_image6 }}"
+                             style="object-fit: cover; height: 200px; width: 100%;" alt="活动图片 6">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.event_image3 }}"
+                             style="object-fit: cover; height: 200px; width: 100%;" alt="活动图片 3">
+                    </div>
+                    <div class="col-6 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.event_image7 }}"
+                             style="object-fit: cover; height: 200px; width: 100%;" alt="活动图片 7">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.event_image4 }}"
+                             style="object-fit: cover; height: 200px; width: 100%;" alt="活动图片 4">
+                    </div>
+                    <div class="col-6 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.event_image8 }}"
+                             style="object-fit: cover; height: 200px; width: 100%;" alt="活动图片 8">
+                    </div>
+                </div>
+
+                <h2 class="item-intro text-muted">【体验店直播 Live-streaming】</h2>
+                <p class="item-intro text-muted">
+                    <a href="https://flive.ifeng.com/live/1011995.html?webkit=1&aman=34G9e25168b7f8C511h881r2440b62Y164na16l8d9&gud=8X997W939n1796800p000p004&code=031k410w3qbkN531nWZv3B8AdR2k410T&state=snsapi_base04F02FD32B2185A888B23152A2FD4E6E&sharefrom=wxh5"
+                       target="_blank" rel="noopener noreferrer">
+                        酱香巴黎——特种兵之旅：挑战8小时带茅台打卡巴黎24个景点
+                    </a>
+                </p>
+
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.living_image1 }}"
+                             style="object-fit: cover; height: 250px; width: 100%;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.living_image2 }}"
+                             style="object-fit: cover; height: 250px; width: 100%;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.living_image3 }}"
+                             style="object-fit: cover; height: 250px; width: 100%;">
+                    </div>
+                </div>
+
+                {% elsif project_id == 3 %}
+                <h1 class="text-uppercase">Films</h1>
+
+                <!-- 视频1 XXX图片+视频播放 -->
+                <h2>Time-traveling to 1921</h2>
+                <div class="mb-4">
+                    <img class="img-fluid" src="{{ page.image1 }}" alt="Time-traveling to 1921">
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <video controls class="embed-responsive-item">
+                        <source src="https://zfile.dyzzz.top:8888/directlink/1/穿越1021.m4v"
+                                type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- 视频2 XXX 图片+视频播放 -->
+                <h2>My China Story</h2>
+                <div class="mb-4">
+                    <img class="img-fluid" src="{{ page.image2 }}" alt="My China Story">
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <video controls class="embed-responsive-item">
+                        <source src="https://zfile.dyzzz.top:8888/directlink/1/短版中国印记My China Story ENG for US 1104.mp4"
+                                type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                {% elsif project_id == 4 %}
+                <h1 class="text-uppercase">Live-streaming</h1>
+
+                <!-- 改为一行一个，总共五张图片 -->
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.image1 }}"
+                             style="object-fit: cover; width: 100%;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.image2 }}"
+                             style="object-fit: cover; width: 100%;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.image3 }}"
+                             style="object-fit: cover; width: 100%;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.image4 }}"
+                             style="object-fit: cover; width: 100%;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.image5 }}"
+                             style="object-fit: cover; width: 100%;">
+                    </div>
+                </div>
+
+
+
+                {% elsif project_id == 5 %}
+                <h1 class="text-uppercase">Event Planning</h1>
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.image1 }}"
+                             style="object-fit: cover; height: 300px; width: 100%;">
+                    </div>
+                    <div class="col-6 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.image2 }}"
+                             style="object-fit: cover; height: 300px; width: 100%;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.image3 }}"
+                             style="object-fit: cover; height: 300px; width: 100%;">
+                    </div>
+                    <div class="col-6 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.image4 }}"
+                             style="object-fit: cover; height: 300px; width: 100%;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.image5 }}"
+                             style="object-fit: cover; height: 300px; width: 100%;">
+                    </div>
+                    <div class="col-6 mb-4">
+                        <img class="img-fluid rounded shadow" src="{{ page.image6 }}"
+                             style="object-fit: cover; height: 300px; width: 100%;">
+                    </div>
+                </div>
+
+
+                {% elsif project_id == 6 %}
+                <script>
+                    // 重定向到新闻报道页面
+                    window.location.href = "https://v.ifeng.com/loc/chinaForce";
+                </script>
+
+
+                <!-- 添加自定义样式 -->
+                <style>
+                    #videoCarousel .carousel-item img {
+                        object-fit: cover;
+                        height: 500px;
+                        width: 100%;
+                    }
+
+                    /* 响应式高度调整 */
+                    @media (max-width: 992px) {
+                        #videoCarousel .carousel-item img {
+                            height: 400px;
+                        }
+                    }
+
+                    @media (max-width: 768px) {
+                        #videoCarousel .carousel-item img {
+                            height: 300px;
+                        }
+                    }
+
+                    @media (max-width: 576px) {
+                        #videoCarousel .carousel-item img {
+                            height: 200px;
+                        }
+                    }
+
+                    /* 链接样式 */
+                    #videoCarousel .carousel-item a {
+                        display: block;
+                    }
+                </style>
+
+                {% elsif project_id == 7 %}
+                <h1 class="text-uppercase">电商网站</h1>
+                <p class="item-intro text-muted">完整的在线购物平台</p>
+                {% assign ecommerce_images = "" | split: "" %}
+                {% for image in site.static_files %}
+                {% if image.path contains '/assets/img/portfolio/ecommerce' %}
+                {% assign ecommerce_images = ecommerce_images | push: image %}
+                {% endif %}
+                {% endfor %}
+
+                {% if ecommerce_images.size > 0 %}
+                <style>
+                    .ecommerce-image {
+                        object-fit: cover;
+                        height: 400px;
+                        width: 100%;
+                    }
+                </style>
+                {% for image in ecommerce_images limit: 1 %}
+                <img class="img-fluid d-block mx-auto ecommerce-image" src="{{ image.path }}" alt="电商平台">
+                {% endfor %}
+                {% endif %}
+
+                {% else %}
+                <h1 class="text-uppercase">{{ page.title }}</h1>
+                <p class="item-intro text-muted">{{ page.subtitle | markdownify }}</p>
+                {% if page.video %}
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video controls class="embed-responsive-item">
+                        <source src="{{ page.video }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                {% elsif page.image %}
+                <img class="img-fluid d-block mx-auto" src="{{ page.image }}" alt="{{ page.caption.title }}">
+                {% endif %}
+                {% endif %}
+
+                <div class="project-content mt-4">
+                    {% if project_id == 1 %}
+                    {% elsif project_id == 6 %}
+
+                    {% else %}
+                    {{ content }}
+                    {% endif %}
+                </div>
+
+                <a href="{{ site.baseurl }}/#{{ site.data.sitetext.portfolio.section | default: 'portfolio' }}"
+                   class="btn btn-primary mt-4">
+                    <i class="fas fa-arrow-left"></i> Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/assets/js/jquery.easing.min.js"></script>
+
+<!-- Contact form JavaScript -->
+<script src="/assets/js/jqBootstrapValidation.js"></script>
+<script src="/assets/js/contact_me.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="/assets/js/agency.min.js"></script>
+
+</body>
+</html>

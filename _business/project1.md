@@ -1,14 +1,15 @@
 ---
 caption: #what displays in the portfolio grid:
-  title: Luckin Coffee
-  subtitle: 
-  thumbnail: assets\img\business\luckin.jpeg
-  
+  title: Haier TVC
+  subtitle:
+  thumbnail: assets\img\business\haier.jpg
+
 #what displays when the item is clicked:
-title: Luckin Coffee
-subtitle: 追咖啡的人 </br> "The Coffee Seeker"
-video: https://zfile.dyzzz.top/directlink/1/%E8%BF%BD%E5%92%96%E5%95%A1%E7%9A%84%E4%BA%BA%200609%E7%89%88.mov
+title: Haier TVC
+subtitle: 生活的意义 </br> "The purpose of life"
+video: https://zfile.dyzzz.top:8888/directlink/1/海尔法国生活的意义预告片.mp4
 
 ---
+
 
 

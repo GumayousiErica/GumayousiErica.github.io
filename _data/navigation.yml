@@ -17,11 +17,9 @@ en: &DEFAULT_EN
       section: business
     - title: "Portfolio"
       section: portfolio
-    - title: "OTHER PORTFOLIO"
-      section: other-portfolio
     - title: "Timeline"
       section: timeline
-    - title: "Team"
+    - title: "Awards"
       section: team
     - title: "Contact"
       section: contact

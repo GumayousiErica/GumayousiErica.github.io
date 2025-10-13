@@ -1,14 +1,12 @@
 ---
 caption: #what displays in the portfolio grid:
-  title: CNNP Brand Promotional Video
+  title: BYD TVC trailer
   subtitle: 
-  thumbnail: assets\img\business\cnnp.png
+  thumbnail: assets\img\business\byd.png
   
 #what displays when the item is clicked:
-title: CNNP Brand Promotional Video
-subtitle: 奔跑着的中国核电 </br> "Running Chinese Nuclear Power"
-video: https://zfile.dyzzz.top/directlink/1/cnnp.mp4
+title: BYD TVC trailer
+subtitle: 致永不放弃的梦想 </br> "Towards Dreams That Never Give Up"
+video: https://zfile.dyzzz.top:8888/directlink/1/30S预告片-04（高清）.mp4
 
 ---
-
-

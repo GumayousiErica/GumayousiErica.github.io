@@ -1,4 +1,4 @@
-<!-- Business Modals -->
+<!-- Portfolio Modals -->
 {% for project in site.business %}
 {% if site.locale and site.locale != "" and site.locale != nil %}
 <div
@@ -10,7 +10,7 @@
 >
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal" onclick="player.pause()">
+            <div class="close-modal" data-dismiss="modal" onclick="stopVideo(this)">
                 <div class="lr">
                     <div class="rl"></div>
                 </div>
@@ -22,30 +22,31 @@
                             <!-- Project Details Go Here -->
                             <h2 class="text-uppercase">{{ project.title }}</h2>
                             <p class="item-intro text-muted">{{ project.subtitle }}</p>
-                            <!-- <img
-                              class="img-fluid d-block mx-auto"
-                              src="{{ project.image }}"
-                              alt="{{ project.alt }}"
-                            /> -->
-                            <!--              <video width="700" height="380" controls>-->
-                            <!--                <source src="{{ project.video }}" preload="auto" type="video/mp4">-->
-                            <!--              </video>-->
-                            <div id="player_61197c50a3bb88de" style="width: 700px; height: 380px;"></div>
-                            <script type="text/javascript" src="https://player.dogecloud.com/js/loader"></script>
-                            <script type="text/javascript">
-                                var player = new DogePlayer({
-                                    container: document.getElementById('player_61197c50a3bb88de'),
-                                    userId: 10871,
-                                    vcode: '61197c50a3bb88de',
-                                    autoPlay: false
-                                });
-                            </script>
-                            <p>{{ project.content }}</p>
+
+                            {% if project.video %}
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video controls class="embed-responsive-item">
+                                    <source src="{{ project.video }}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            {% elsif project.image %}
+                            <img class="img-fluid d-block mx-auto" src="{{ project.image }}" alt="{{ project.caption.title }}">
+                            {% endif %}
+
+                            <!-- Explore More Button - only show when explore-more has value -->
+                            {% if project.explore-more %}
+                            <a href="{{ project.explore-more }}" target="_blank" class="btn btn-secondary mr-2">
+                                <i class="fas fa-external-link-alt"></i>
+                                Explore More
+                            </a>
+                            {% endif %}
+
                             <button
                                     class="btn btn-primary"
                                     data-dismiss="modal"
                                     type="button"
-                                    onclick="player.pause()"
+                                    onclick="stopVideo(this)"
                             >
                                 <i class="fas fa-times"></i>
                                 {{ site.data.sitetext[site.locale].business.closebutton |
@@ -66,9 +67,9 @@
         role="dialog"
         aria-hidden="true"
 >
-    <div class="modal-dialog">
+    <div class="markdown-highlighting"><div class="modal-dialog">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
+            <div class="close-modal" data-dismiss="modal" onclick="stopVideo(this)">
                 <div class="lr">
                     <div class="rl"></div>
                 </div>
@@ -80,17 +81,31 @@
                             <!-- Project Details Go Here -->
                             <h2 class="text-uppercase">{{ project.title }}</h2>
                             <p class="item-intro text-muted">{{ project.subtitle }}</p>
-                            <img
-                                    class="img-fluid d-block mx-auto"
-                                    src="{{ project.image }}"
-                                    alt="{{ project.alt }}"
-                            />
-                            <p>{{ project.content }}</p>
+
+                            {% if project.video %}
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video controls class="embed-responsive-item">
+                                    <source src="{{ project.video }}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            {% elsif project.image %}
+                            <img class="img-fluid d-block mx-auto" src="{{ project.image }}" alt="{{ project.caption.title }}">
+                            {% endif %}
+
+                            <!-- Explore More Button - only show when explore-more has value -->
+                            {% if project.explore-more %}
+                            <a href="{{ project.explore-more }}" target="_blank" class="btn btn-secondary mr-2">
+                                <i class="fas fa-external-link-alt"></i>
+                                Explore More
+                            </a>
+                            {% endif %}
+
                             <button
                                     class="btn btn-primary"
                                     data-dismiss="modal"
                                     type="button"
-                                    onclick="stopVideo()"
+                                    onclick="stopVideo(this)"
                             >
                                 <i class="fas fa-times"></i>
                                 {{ site.data.sitetext.business.closebutton |
@@ -101,8 +116,22 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div></div>
 </div>
 {% endif %}
 {% endfor %}
-<!-- End Business Modals -->
+<!-- End Portfolio Modals -->
+
+<script>
+function stopVideo(element) {
+    // 找到当前模态框中的视频元素
+    const modal = element.closest('.modal');
+    const video = modal.querySelector('video');
+
+    // 如果存在视频元素，则暂停播放并重置到开头
+    if (video) {
+        video.pause();
+        video.currentTime = 0;
+    }
+}
+</script>

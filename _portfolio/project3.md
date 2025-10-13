@@ -1,14 +1,11 @@
 ---
+layout: portfolio_project
+project_id: 3
 caption: #what displays in the portfolio grid:
-  title: Luckin Coffee
-  subtitle: 
-  thumbnail: assets\img\portfolio\luckin.jpeg
-  
-#what displays when the item is clicked:
-title: Luckin Coffee
-subtitle: 追咖啡的人 </br> "The Coffee Seeker"
-video: http://123.57.244.64:8080/directlink/1/luckin.mov
-
+  title: Films
+  thumbnail: assets\img\portfolio\cover\film-cover.jpg
+image1: \assets\img\portfolio\films\film1.png
+image2: \assets\img\portfolio\films\film2.png
 ---
 
 

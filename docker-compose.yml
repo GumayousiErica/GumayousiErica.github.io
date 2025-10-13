@@ -14,6 +14,8 @@ services:
       sh -c "
         gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/ &&
         bundle config mirror.https://rubygems.org https://gems.ruby-china.com &&
+        bundle config retry 5 &&
+        bundle config timeout 600 &&
         bundle check || bundle install &&
         jekyll build --incremental &&
         jekyll serve --host 0.0.0.0 --skip-initial-build --no-watch
@@ -21,4 +23,3 @@ services:
 
 volumes:
   gem_cache:
-
