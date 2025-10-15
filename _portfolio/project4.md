@@ -9,6 +9,8 @@ image2: \assets\img\portfolio\live-streaming\img2.jpg
 image3: \assets\img\portfolio\live-streaming\img3.jpg
 image4: \assets\img\portfolio\live-streaming\img4.jpg
 image5: \assets\img\portfolio\live-streaming\img5.jpg
+image6: \assets\img\portfolio\live-streaming\img6.png
+
 ---
 
 

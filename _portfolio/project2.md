@@ -13,6 +13,4 @@ event_image6: \assets\img\portfolio\imc\img6.png
 event_image7: \assets\img\portfolio\imc\img7.png
 event_image8: \assets\img\portfolio\imc\img8.png
 living_image1: \assets\img\portfolio\imc\living-img1.png
-living_image2: \assets\img\portfolio\imc\living-img2.png
-living_image3: \assets\img\portfolio\imc\living-img3.png
 ---
