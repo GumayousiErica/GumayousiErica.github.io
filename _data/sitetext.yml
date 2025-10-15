@@ -116,13 +116,16 @@ en: &DEFAULT_EN
     subtext:
     section: team
     people:
-      - name: "中国印记（2019）</br>最佳纪录片奖"
+      - name: "My China Story (2019)"
+        award: "Best Documentary Film"
         role: "SMG"
         image: assets/img/team/img1.png
-      - name: "普京就职典礼（2021）</br>最佳直播奖"
-        role: SMG
+      - name: "Putin's Inauguration (2021)"
+        award: "Best Live Broadcast"
+        role: "SMG"
         image: assets/img/team/img2.png
-      - name: "瑞幸-追咖啡的人（2023）</br>最佳商业片奖"
+      - name: "The Coffee Chasers (2023)"
+        award: "Best Commercial Film"
         role: "Ifeng New Media"
         image: assets/img/team/img3.png
 
